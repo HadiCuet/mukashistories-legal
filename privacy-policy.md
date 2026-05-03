@@ -1,6 +1,6 @@
 # Mukashi Stories — Privacy Policy
 
-**Effective date:** May 3, 2026
+**Effective date:** May 4, 2026
 
 This policy explains what data Mukashi Stories collects, why, and the choices you have. Mukashi Stories is a reading app made for children, so this policy is written in plain English on purpose — parents and guardians should be able to read it in a few minutes.
 
@@ -50,6 +50,15 @@ We use two Firebase services from Google to improve the app: **Analytics** and *
 
 **What we do NOT send:** the contents of any story, full sentences from the reader, translations the child reads, search queries, photo library content, microphone input, contact info, payment info, location, or any name or personal identifier you or your child enters anywhere. The app does not have a microphone, camera, or photo library permission at all.
 
+### In-app purchases
+
+Mukashi Stories offers an optional **Mukashi Premium** subscription and a one-time lifetime unlock through Apple's standard In-App Purchase system. We use Apple's StoreKit 2 framework to handle the entire purchase flow.
+
+- **Apple processes the payment.** Your payment method (credit card, Apple Cash, etc.) is never seen by the app or by us. Apple charges your Apple ID directly.
+- **What the app stores locally:** which product you purchased and your current subscription status. This is what powers the "Premium unlocked" state on this device.
+- **What we send to Firebase Analytics:** non-financial purchase events only — for example, *that* a paywall was shown, *that* a purchase started, *that* a purchase completed, the product identifier (e.g. "monthly", "yearly", "lifetime"), and a generic failure reason if a purchase failed. We never send prices, transaction IDs, receipt data, or any payment information to Firebase.
+- **Restoring purchases.** If you reinstall the app or sign in on a new device, **Settings → Restore Purchases** asks Apple's servers (not ours) which products are tied to your Apple ID and re-unlocks the appropriate features. We don't keep our own purchase database — Apple is the source of truth.
+
 **Firebase Crashlytics** collects data only when the app crashes or reports a non-fatal error:
 
 - Stack traces from the crash.
@@ -92,6 +101,7 @@ We do not sell your or your child's personal information, and we do not share it
   - Reset reading progress, clear saved words, or reset the onboarding flow
 - **Parental contact for COPPA requests.** Parents and guardians can email **hadi.fiftytwo@gmail.com** to request access to, deletion of, or further information about any data associated with their child's device. Because we don't tie data to identifiable children, the most reliable erasure is uninstalling the app — which invalidates the Firebase installation ID and removes all local data.
 - **No third-party data brokers.** The only third party that processes data from this app is Firebase (Google), described in Section 6.
+- **In-app purchases gated by Apple's parental controls.** All purchases go through Apple's standard In-App Purchase flow, so they're subject to whatever parental controls you've configured on the device — including **Ask to Buy** (Family Sharing) and **Screen Time → Content & Privacy Restrictions → iTunes & App Store Purchases**. We do not have a separate purchase flow that bypasses these controls.
 
 ---
 
