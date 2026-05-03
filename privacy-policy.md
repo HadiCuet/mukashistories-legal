@@ -8,7 +8,7 @@ This policy explains what data Mukashi Stories collects, why, and the choices yo
 
 ## 1. Who we are
 
-Mukashi Stories is an iOS app for reading bilingual children's folk tales — a side-by-side reader where each line shows the source language and the reader's native language together. It is developed and operated by **Abdullah Al Hadi** ("we", "us"). For the purposes of the EU / UK / EEA General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA), Abdullah Al Hadi is the **data controller** for personal data collected through the Mukashi Stories app. For any privacy questions, contact us at **abdullah.hadi@cefalo.com**.
+Mukashi Stories is an iOS app for reading bilingual children's folk tales — a side-by-side reader where each line shows the source language and the reader's native language together. It is developed and operated by **Abdullah Al Hadi** ("we", "us"). For the purposes of the EU / UK / EEA General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA), Abdullah Al Hadi is the **data controller** for personal data collected through the Mukashi Stories app. For any privacy questions, contact us at **hadi.fiftytwo@gmail.com**.
 
 This policy covers the Mukashi Stories iOS app (also published for iPadOS, macOS, and visionOS).
 
@@ -90,7 +90,7 @@ We do not sell your or your child's personal information, and we do not share it
   - Restrict the visible library to a hand-picked set of stories
   - Set a daily reading time limit
   - Reset reading progress, clear saved words, or reset the onboarding flow
-- **Parental contact for COPPA requests.** Parents and guardians can email **abdullah.hadi@cefalo.com** to request access to, deletion of, or further information about any data associated with their child's device. Because we don't tie data to identifiable children, the most reliable erasure is uninstalling the app — which invalidates the Firebase installation ID and removes all local data.
+- **Parental contact for COPPA requests.** Parents and guardians can email **hadi.fiftytwo@gmail.com** to request access to, deletion of, or further information about any data associated with their child's device. Because we don't tie data to identifiable children, the most reliable erasure is uninstalling the app — which invalidates the Firebase installation ID and removes all local data.
 - **No third-party data brokers.** The only third party that processes data from this app is Firebase (Google), described in Section 6.
 
 ---
@@ -117,8 +117,8 @@ No other third-party analytics, advertising, or tracking SDK is bundled in the a
 
 - **Reset reading data** at any time — **Parents → Reset Reading Progress** or **Clear Saved Words** (PIN-gated).
 - **Turn off analytics system-wide** — iOS **Settings → Privacy & Security → Analytics & Improvements → Share iPhone Analytics**. When this is off, Firebase still receives minimal crash data; you can prevent even that by uninstalling the app.
-- **Access or erase your or your child's data** under GDPR (EEA, UK), CCPA/CPRA (California), or similar laws — email **abdullah.hadi@cefalo.com**. Because we don't tie analytics data to a persistent identity, the most reliable erasure is uninstalling the app, which invalidates the Firebase installation ID.
-- **Lodge a complaint** — if you're in the EEA, UK, or Switzerland and believe we're mishandling your data, you have the right to complain to your local data protection authority. We'd appreciate the chance to address your concern first — email **abdullah.hadi@cefalo.com** and we'll respond within 30 days.
+- **Access or erase your or your child's data** under GDPR (EEA, UK), CCPA/CPRA (California), or similar laws — email **hadi.fiftytwo@gmail.com**. Because we don't tie analytics data to a persistent identity, the most reliable erasure is uninstalling the app, which invalidates the Firebase installation ID.
+- **Lodge a complaint** — if you're in the EEA, UK, or Switzerland and believe we're mishandling your data, you have the right to complain to your local data protection authority. We'd appreciate the chance to address your concern first — email **hadi.fiftytwo@gmail.com** and we'll respond within 30 days.
 
 ---
 
@@ -138,4 +138,4 @@ If we change this policy, the new version will replace this page at **https://ha
 
 ## 11. Contact us
 
-Questions, requests, or complaints: **abdullah.hadi@cefalo.com**.
+Questions, requests, or complaints: **hadi.fiftytwo@gmail.com**.
