@@ -6,4 +6,4 @@ Legal documents for the [Mukashi Stories](https://apps.apple.com/app/mukashi-sto
 - [`privacy-policy.md`](privacy-policy.md) — canonical Markdown source
 - [`index.html`](index.html) — hosted page
 
-Maintained by Abdullah Al Hadi. Contact: hadi.fiftytwo@gmail.com
+Maintained by Abdullah Al Hadi. Contact: mukashi.dev@gmail.com
