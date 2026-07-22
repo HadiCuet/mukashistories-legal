@@ -18,19 +18,19 @@
       "tr": "Erken Fırsat"
     },
     "blurb": {
-      "default": "Half price for our first readers",
-      "ja": "はじめての読者さまへ半額でお届け",
-      "es": "Mitad de precio para nuestros primeros lectores",
-      "zh": "首批读者半价优惠",
-      "fr": "À moitié prix pour nos premiers lecteurs",
-      "de": "Halber Preis für unsere ersten Leser",
-      "ko": "첫 독자분들께 반값으로",
-      "it": "Metà prezzo per i nostri primi lettori",
-      "bn": "আমাদের প্রথম পাঠকদের জন্য অর্ধেক দামে",
-      "ar": "بنصف السعر لأوائل قرّائنا",
-      "pt": "Metade do preço para nossos primeiros leitores",
-      "ru": "Полцены для наших первых читателей",
-      "tr": "İlk okuyucularımıza yarı fiyatına"
+      "default": "A special offer for our first readers",
+      "ja": "はじめての読者さまへ特別なご提供",
+      "es": "Una oferta especial para nuestros primeros lectores",
+      "zh": "献给首批读者的特别优惠",
+      "fr": "Une offre spéciale pour nos premiers lecteurs",
+      "de": "Ein besonderes Angebot für unsere ersten Leser",
+      "ko": "첫 독자분들을 위한 특별한 혜택",
+      "it": "Un'offerta speciale per i nostri primi lettori",
+      "bn": "আমাদের প্রথম পাঠকদের জন্য বিশেষ অফার",
+      "ar": "عرض خاص لأوائل قرّائنا",
+      "pt": "Uma oferta especial para nossos primeiros leitores",
+      "ru": "Особое предложение для наших первых читателей",
+      "tr": "İlk okuyucularımıza özel bir fırsat"
     },
     "regularPrice": {
       "AFG": "39.99",
