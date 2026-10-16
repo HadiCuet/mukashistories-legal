@@ -1,148 +1,170 @@
 # Mukashi Stories — Privacy Policy
 
-**Effective date:** May 4, 2026
+**Effective date:** October 16, 2026
 
-This policy explains what data Mukashi Stories collects, why, and the choices you have. Mukashi Stories is a reading app made for children, so this policy is written in plain English on purpose — parents and guardians should be able to read it in a few minutes.
+This policy explains what Mukashi Stories collects, why, and the choices you have. Mukashi Stories is a reading app made for children, so we have written it in plain English. A parent or guardian should be able to read it in a few minutes.
+
+**The short version:** there are no accounts, no ads, and no selling of data. Reading progress and saved words stay on your device. We use Google's Firebase to count how the app is used and to find crashes. Parents decide whether usage counts are shared and whether the app sends story news.
 
 ---
 
 ## 1. Who we are
 
-Mukashi Stories is an iOS app for reading bilingual children's folk tales — a side-by-side reader where each line shows the source language and the reader's native language together. It is developed and operated by **Abdullah Al Hadi** ("we", "us"). For the purposes of the EU / UK / EEA General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA), Abdullah Al Hadi is the **data controller** for personal data collected through the Mukashi Stories app. For any privacy questions, contact us at **mukashi.dev@gmail.com**.
+Mukashi Stories is an app for reading bilingual children's folk tales. Each line shows the story language and the reader's own language together. It is developed and run by **Abdullah Al Hadi** ("we", "us"). For the EU / UK / EEA General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA), Abdullah Al Hadi is the **data controller** for personal data collected through the app. For any privacy question, write to **mukashi.dev@gmail.com**.
 
-This policy covers the Mukashi Stories iOS app (also published for iPadOS, macOS, and visionOS).
+This policy covers the Mukashi Stories app on iPhone, iPad, Mac, and Apple Vision Pro.
 
 ---
 
-## 2. Data we collect
+## 2. What we collect
 
-### Stays only on your device — never sent anywhere
+### Stays on your device
 
-Everything below is stored locally on your device using Apple's SwiftData framework. If you have iCloud Backup enabled, Apple includes this data in your encrypted iCloud backup — that backup is between you and Apple; we have no access to it.
+These are stored on your device only. We never receive them.
 
-- **Reading progress** — which page of which story you've reached, and which stories you've completed.
-- **Saved words** — words you've tapped and saved to "My Words" for later review, plus your spaced-repetition review history.
-- **Preferences** — your settings (language pair, theme, font size, layout style, narration preferences, App Lock on/off, parental PIN hash, etc.), stored in iOS user defaults and SwiftData.
-- **Daily reading minutes** — used by the parental "daily reading limit" feature. Counted on-device, not sent anywhere.
+- **Reading progress** — which page of which story you reached, which stories you finished, and which you marked as loved.
+- **Saved words** — words you saved to "My Words", with your review history.
+- **Settings** — language pair, theme, text size, layout, narration and reminder choices, and your parental controls.
+- **Daily reading minutes** — counted on the device for the parental daily reading limit.
+- **Parent PIN** — if a parent sets one, only a scrambled (hashed) version is kept, on the device. We never see the PIN.
+- **App Lock** — if turned on, a simple on/off setting on the device.
 
-A parent or guardian can clear any of this at any time from **Parents → Reset Reading Progress / Clear Saved Words / Reset Onboarding**. Uninstalling the app removes all of it.
+There are no accounts and no sign-in. If iCloud Backup is on, Apple may include this data in your encrypted backup. That is between you and Apple. A parent can clear it from **Parents → Reset Reading Progress / Clear Saved Words / Reset Onboarding**. Deleting the app removes all of it.
 
-### Sent to Firebase (Google)
+### Usage data (Firebase Analytics, parent can turn off)
 
-We use two Firebase services from Google to improve the app: **Analytics** and **Crashlytics**. Both are configured for the strictest privacy settings appropriate for a children's app — no advertising identifiers used for personalization, no cross-app tracking, no ads.
+We use **Google Firebase Analytics** to learn which features and stories children enjoy. We use the version of Firebase Analytics that has **no advertising features**. The app does not read the advertising identifier (IDFA), does not collect the vendor identifier (IDFV), and does not ask for App Tracking permission.
 
-**Firebase Analytics** collects:
+When usage sharing is on, Analytics receives:
 
-- A device identifier scoped to this app only (a Firebase installation ID). It cannot identify the reader across other apps.
-- Device type, OS version, app version, language, and country (derived from IP).
-- Which screens the reader views in the app (Library, Reader, Treasures, Settings, etc.).
-- Aggregate feature usage so we can decide what to keep, fix, or build next:
-  - Story interactions: which stories are opened, completed, or favorited (story IDs only) — we never send the story text or your translations.
-  - Word interactions: that a word was tapped, saved, unsaved, or pronounced. We do log the word itself and its part of speech, because that's how we know which vocabulary kids find useful — we never log who tapped it.
-  - Reading session length (in seconds), page-turn direction, and TTS play/pause counts.
-  - Spaced-repetition review session results (how many words got, how many missed) — counts only.
-  - Settings changes (theme, language pair, layout style, etc.) — names and new values only.
-  - Tab switches between Library, Treasures, Parents, and Settings.
+- A random identifier made for this app on this device (the Firebase installation ID). It cannot recognise your child in other apps, and it resets when the app is reinstalled.
+- Device type, system version, app version, and language.
+- **Approximate location**, such as the country or city, worked out by Google from the connection's IP address. Google does not keep the IP address itself. We do not use GPS and the app has no location permission.
+- Screens viewed and taps on features, such as tab switches and setting changes.
+- Story activity: which stories are opened, finished, or loved (story ID and title), reading time, and page turns. We never send story text.
+- Word activity: that a word was tapped, saved, removed, practised, or pronounced. We send the word itself and its part of speech, to learn which vocabulary children find useful. We never send who tapped it.
+- Purchase screen events: that the paywall was shown, a purchase started, finished, or failed, and which plan. We never send prices, receipts, or payment details.
+- A few settings (app language pair, theme, layout style) and whether the device has Premium.
 
-**We do NOT request App Tracking Transparency permission.** Ad personalization, ad-related data storage, and ad-user-data sharing are explicitly disabled in the app's `Info.plist` (`GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS=false`, `GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_STORAGE=false`, `GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_USER_DATA=false`). Your child's IDFA is never read.
+We never set a user ID, and we never send names, email addresses, contact details, photos, or anything a child types.
 
-**We never call `setUserID()`.** There is no account, no login, and no persistent identity tied to your child across devices.
+**Your choice:** in **Parents → Share anonymous usage data**, a parent can switch this off at any time. The switch starts **off** in the European Economic Area, the United Kingdom, and Switzerland, and **on** elsewhere. When it is off, the app does not send usage data to Analytics.
 
-**What we do NOT send:** the contents of any story, full sentences from the reader, translations the child reads, search queries, photo library content, microphone input, contact info, payment info, location, or any name or personal identifier you or your child enters anywhere. The app does not have a microphone, camera, or photo library permission at all.
+### Crash reports (Firebase Crashlytics)
+
+Crash reports help us fix bugs. They are **not** controlled by the usage-data switch. They contain:
+
+- The technical trace of what went wrong.
+- The device state at that moment (system version, device model, memory).
+- Short log lines such as "opened Reader". They never contain saved words, story text, or personal content.
+- Errors the app reports without crashing, such as a failed store lookup.
+
+### Notifications
+
+- **Daily reading reminder** (optional): a reminder that is created and shown on your device at the time you choose. Nothing is sent to us for it.
+- **Story news & offers** (optional): if a parent says yes, the device joins Firebase Cloud Messaging topics so we can send news about new stories and offers. The topics are `all_users`, `free` (devices without Premium), and one for the app language (for example `lang_en`), so the message arrives in the right language. We do not keep a list of devices and cannot tell which device is which. Until a parent says yes, the device joins none of these topics and gets no news or offers.
+- Notifications need your permission through the iPhone's system prompt. To stop story news, switch off **Settings → Notifications → Story news & offers** in the app, or turn off notifications for the app in iOS Settings.
+
+### Promotional offers (GitHub Pages)
+
+When the app opens, it downloads a small public file (`promo.json`) from our legal pages, hosted on GitHub Pages. The file says whether a special offer is running. The request sends nothing about you or your child, and we add no identifiers. As with any website, **GitHub can see the device's IP address** in the request. See [GitHub's privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
 ### In-app purchases
 
-Mukashi Stories offers an optional **Mukashi Premium** subscription and a one-time lifetime unlock through Apple's standard In-App Purchase system. We use Apple's StoreKit 2 framework to handle the entire purchase flow.
+Mukashi Stories offers an optional **Premium** subscription and a one-time lifetime unlock through Apple's In-App Purchase system.
 
-- **Apple processes the payment.** Your payment method (credit card, Apple Cash, etc.) is never seen by the app or by us. Apple charges your Apple ID directly.
-- **What the app stores locally:** which product you purchased and your current subscription status. This is what powers the "Premium unlocked" state on this device.
-- **What we send to Firebase Analytics:** non-financial purchase events only — for example, *that* a paywall was shown, *that* a purchase started, *that* a purchase completed, the product identifier (e.g. "monthly", "yearly", "lifetime"), and a generic failure reason if a purchase failed. We never send prices, transaction IDs, receipt data, or any payment information to Firebase.
-- **Restoring purchases.** If you reinstall the app or sign in on a new device, **Settings → Restore Purchases** asks Apple's servers (not ours) which products are tied to your Apple ID and re-unlocks the appropriate features. We don't keep our own purchase database — Apple is the source of truth.
+- **Apple handles the payment.** The app and we never see your card or payment details.
+- **On your device,** the app keeps which product you bought and whether it is active.
+- **Restoring purchases** asks Apple which products belong to your Apple ID. We keep no purchase records of our own.
 
-**Firebase Crashlytics** collects data only when the app crashes or reports a non-fatal error:
+### Contacting support
 
-- Stack traces from the crash.
-- A snapshot of device state at the time of the crash (OS version, device model, memory pressure, etc.).
-- Breadcrumbs — short text messages we log as the app runs (e.g. "opened Reader") to help us reproduce the crash. These never contain the words you've saved, story content, or any personal content.
-- Non-fatal errors explicitly reported by the app.
+If you email us from the app, the message may include the app version, system version, device model, language, and theme so we can help you. You can delete these lines before sending. We use your message only to reply.
+
+### What we do not collect
+
+We do not collect names, email addresses, accounts, photos, contacts, precise location, or payment details. The app has no camera, microphone, photo library, contacts, or motion permissions, and it records no audio. Read-aloud uses the voices built into your device and works on the device.
 
 ---
 
-## 3. Permissions the app asks for
+## 3. Permissions the app may ask for
 
-- **Face ID / Touch ID / passcode** — optional, only used when **App Lock** or **biometrics for the Parent Dashboard** are enabled. The check happens locally via Apple's LocalAuthentication framework. Biometric data never leaves the device and is never seen by the app.
-- **Notifications** — optional, only when you opt in to a daily reading reminder. Used to send one local reminder at the time you choose. Not used for marketing.
-
-The app does **not** request access to the camera, microphone, photo library, contacts, location, or motion data.
+- **Face ID / Touch ID / passcode** — optional. Used only if a parent turns on **App Lock** or biometrics for the Parents area. The check is done by Apple on the device. The app never sees your face or fingerprint.
+- **Notifications** — optional, as described above.
 
 ---
 
 ## 4. How we use this data
 
-- **Local data** (reading progress, saved words, settings) powers the app's features for the reader — picking up where they left off, reviewing saved words, applying their preferences. It is not used for anything else.
-- **Firebase Analytics** tells us which features are actually being used — which stories engage children, which words they save, which layout style they prefer. We look at aggregate counts, not at individual users. The goal is to decide what to improve and what to remove.
-- **Firebase Crashlytics** tells us when and why the app crashes so we can fix the underlying bug.
+- **Data on your device** powers the app: picking up where you left off, reviewing saved words, applying your settings. It is used for nothing else.
+- **Usage data** tells us which features and stories to improve or drop. We look at totals, not at individual children.
+- **Crash reports** tell us when and why the app breaks so we can fix it.
+- **Notification topics** let us send news to the right language and audience.
 
-We do not sell your or your child's personal information, and we do not share it for cross-context behavioral advertising (as those terms are defined under the California Consumer Privacy Act). We do not share data with advertisers, and we do not build profiles across other apps.
-
----
-
-## 5. Children's privacy (COPPA)
-
-**Mukashi Stories is directed to children, and we treat all users as if they were under 13.** This affects everything in this policy:
-
-- **No advertising.** The app contains no ads and is not integrated with any ad network. AdMob is not in the app.
-- **No ad personalization.** As described in Section 2, the technical flags that enable ad personalization, ad-related data storage, and ad-user-data sharing are all turned off.
-- **No persistent user identity.** We do not collect a name, email, phone number, address, photo, or any other directly-identifying information from the child. We never call `setUserID()`. The Firebase installation ID is a per-install random identifier that resets when the app is reinstalled.
-- **Parental controls.** The **Parents** tab is gated behind a 4-digit PIN (and optional biometrics). It gives the parent or guardian full control to:
-  - View aggregate stats (stories completed, words saved, reading time)
-  - Restrict the visible library to a hand-picked set of stories
-  - Set a daily reading time limit
-  - Reset reading progress, clear saved words, or reset the onboarding flow
-- **Parental contact for COPPA requests.** Parents and guardians can email **mukashi.dev@gmail.com** to request access to, deletion of, or further information about any data associated with their child's device. Because we don't tie data to identifiable children, the most reliable erasure is uninstalling the app — which invalidates the Firebase installation ID and removes all local data.
-- **No third-party data brokers.** The only third party that processes data from this app is Firebase (Google), described in Section 6.
-- **In-app purchases gated by Apple's parental controls.** All purchases go through Apple's standard In-App Purchase flow, so they're subject to whatever parental controls you've configured on the device — including **Ask to Buy** (Family Sharing) and **Screen Time → Content & Privacy Restrictions → iTunes & App Store Purchases**. We do not have a separate purchase flow that bypasses these controls.
+**We show no ads, we do not sell personal information, and we do not share it for advertising.** We do not track your child across other companies' apps and websites.
 
 ---
 
-## 6. Third parties
+## 5. Children's privacy
 
-The only third-party service the app communicates with is **Firebase**, operated by Google LLC. Google processes Analytics and Crashlytics data as our service provider, under the [Firebase Data Processing and Security Terms](https://firebase.google.com/terms/data-processing-terms). Google's own privacy practices are covered by the [Google Privacy Policy](https://policies.google.com/privacy).
+Mukashi Stories is made for children, with a parent or guardian in control. We treat every user as a child under 13, and as a child under the age of consent in their country.
 
-Google primarily processes this data on servers located in the **United States**. For users in the EEA, UK, or Switzerland, international transfers rely on Google's Data Processing and Security Terms, which incorporate the European Commission's Standard Contractual Clauses and the UK International Data Transfer Addendum.
+- **No ads** and no ad networks. No advertising identifiers are read.
+- **No accounts** and no collection of a child's name, email, phone number, address, or photos.
+- **Parents decide.** Purchases, outside links, settings, usage sharing and story news sit behind a grown-up check, or behind the parent's 4-digit PIN (optionally Face ID or Touch ID) once one is set. A parent can:
+  - Switch usage sharing on or off.
+  - Say yes or no to story news and offers.
+  - View reading stats, pick which stories are shown, and set a daily reading limit.
+  - Reset reading progress, clear saved words, or reset onboarding.
+- **Purchases follow your Apple settings.** They go through Apple, so **Ask to Buy** and Screen Time restrictions apply.
+- **Only service providers.** The only outside services are Google (Firebase) and GitHub (Pages), described in Section 6, and Apple for purchases and notification delivery.
+- **Requests.** Parents can email **mukashi.dev@gmail.com** to ask about, access, or delete data linked to their child's device. Because we hold no accounts or names, the most reliable way to erase it is to delete the app (see Section 8).
 
-No other third-party analytics, advertising, or tracking SDK is bundled in the app.
+We follow the principles of the US Children's Online Privacy Protection Act (COPPA) and Article 8 of the GDPR. If you believe a child has given us personal information, tell us and we will delete it.
+
+---
+
+## 6. Other companies involved
+
+- **Google (Firebase)** processes Analytics, Crashlytics, and Cloud Messaging for us as a service provider, under the [Firebase Data Processing and Security Terms](https://firebase.google.com/terms/data-processing-terms). See also the [Google Privacy Policy](https://policies.google.com/privacy). Google mainly processes this data in the **United States**. For people in the EEA, UK, or Switzerland, transfers rely on the Standard Contractual Clauses and the UK International Data Transfer Addendum in those terms.
+- **GitHub** hosts the promo file and this policy (see "Promotional offers").
+- **Apple** processes purchases and delivers notifications. Apple's own privacy policy applies.
+
+No other analytics, advertising, or tracking tool is in the app.
 
 ---
 
 ## 7. How long we keep it
 
-- **Local data** — kept on your device until you delete it or uninstall the app.
-- **Firebase Analytics** — Google retains event-level data for **14 months** (Firebase's default), after which older events are aggregated or dropped.
-- **Firebase Crashlytics** — Google retains crash reports for **90 days**.
+- **On your device** — until you delete it or delete the app.
+- **Firebase Analytics** — Google keeps event-level data for 14 months.
+- **Firebase Crashlytics** — crash reports are kept for 90 days.
+- **Notification topics** — nothing is stored by us about which device joined; topic membership ends when you opt out or delete the app.
 
 ---
 
-## 8. Your rights and choices
+## 8. Your choices and rights
 
-- **Reset reading data** at any time — **Parents → Reset Reading Progress** or **Clear Saved Words** (PIN-gated).
-- **Turn off analytics system-wide** — iOS **Settings → Privacy & Security → Analytics & Improvements → Share iPhone Analytics**. When this is off, Firebase still receives minimal crash data; you can prevent even that by uninstalling the app.
-- **Access or erase your or your child's data** under GDPR (EEA, UK), CCPA/CPRA (California), or similar laws — email **mukashi.dev@gmail.com**. Because we don't tie analytics data to a persistent identity, the most reliable erasure is uninstalling the app, which invalidates the Firebase installation ID.
-- **Lodge a complaint** — if you're in the EEA, UK, or Switzerland and believe we're mishandling your data, you have the right to complain to your local data protection authority. We'd appreciate the chance to address your concern first — email **mukashi.dev@gmail.com** and we'll respond within 30 days.
+- **Turn off usage sharing** — **Parents → Share anonymous usage data**.
+- **Turn off story news** — **Settings → Notifications → Story news & offers**, or iOS Settings → Notifications.
+- **Clear reading data** — **Parents → Reset Reading Progress** or **Clear Saved Words**.
+- **Delete everything** — delete the app. This removes all data on the device and gives a reinstalled app a new random identifier, so old usage data can no longer be linked to it.
+- **Access or erase data** under GDPR, CCPA/CPRA, or similar laws — email **mukashi.dev@gmail.com**. We hold no names or accounts, so we may ask for details to find the right records, and some data may not be linkable to you.
+- **Complain** — if you are in the EEA, UK, or Switzerland, you can complain to your local data protection authority. We would like the chance to help first; we reply within 30 days.
 
 ---
 
 ## 9. Security
 
-- Local data is stored using iOS's standard app sandbox protections. If you enable App Lock or biometrics for the Parent Dashboard, those areas are additionally gated behind Face ID / Touch ID / passcode.
-- Data sent to Firebase travels over HTTPS (TLS).
-- We cannot guarantee perfect security — no one can. If we become aware of a breach that affects your data, we will notify you as required by applicable law.
+- Data on your device is protected by the standard iOS app sandbox. App Lock and Parents area protection add Face ID, Touch ID, or passcode checks.
+- Data sent to Firebase and GitHub travels over HTTPS.
+- No system is perfectly secure. If a breach affects your data, we will tell you as the law requires.
 
 ---
 
 ## 10. Changes to this policy
 
-If we change this policy, the new version will replace this page at **https://hadicuet.github.io/mukashistories-legal/** and the "Effective date" at the top will be updated. Material changes (e.g. a new third-party service, a new category of data) will be called out in the app's release notes.
+If we change this policy, the new version will replace this page at **https://hadicuet.github.io/mukashistories-legal/** and the effective date above will change. For material changes, such as a new service or new kind of data, we will say so in the app's release notes.
 
 ---
 

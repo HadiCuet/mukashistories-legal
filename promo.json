@@ -1,6 +1,6 @@
 {
   "lifetime": {
-    "active": true,
+    "active": false,
     "emoji": "🐣",
     "reason": {
       "default": "Early Bird Offer",
