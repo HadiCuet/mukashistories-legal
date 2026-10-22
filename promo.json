@@ -15,7 +15,8 @@
       "ar": "عرض خاص",
       "pt": "Oferta especial",
       "ru": "Специальное предложение",
-      "tr": "Özel Fırsat"
+      "tr": "Özel Fırsat",
+      "id": "Penawaran Spesial"
     },
     "blurb": {
       "default": "Lifetime at a special price until 30 October",
@@ -30,7 +31,8 @@
       "ar": "مدى الحياة بسعر خاص حتى 30 أكتوبر",
       "pt": "Vitalício com preço especial até 30 de outubro",
       "ru": "«Навсегда» по специальной цене до 30 октября",
-      "tr": "Ömür Boyu, 30 Ekim'e kadar özel fiyatla"
+      "tr": "Ömür Boyu, 30 Ekim'e kadar özel fiyatla",
+      "id": "Paket Seumur Hidup dengan harga spesial sampai 30 Oktober"
     },
     "regularPrice": {
       "AFG": "39.99",
